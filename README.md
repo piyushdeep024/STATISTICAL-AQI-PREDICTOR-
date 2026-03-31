@@ -67,48 +67,43 @@ END WHILE
 ---
 
 ##  Workflow Flowchart
-START
-↓ [Initialize System]
-↓ ┌─────────────────────┐
-
-│ MAIN MENU │
-
-│ 1.Add 2.History │──────┐
-
-│ 3.Predict 4.Graph │ │
-
-│ 5.Exit │ │
-
-└─────────────────────┘ │
-↓ │
-┌─────────────────┐ │
-│ Add Reading │◄─────────┘
-│ (AQI Input) │
-└─────────────────┘
-↓ ┌─────────────────┐
-│ Store Record │
-│(Hour+AQI+Cat) │
-└─────────────────┘
-↑ └──────────────────────┐
-↓
-┌──────────────┐
-│ HISTORY │
-│ DISPLAY │
-└──────────────┘
-↓
-┌──────────────┐
-│ PREDICT │───► [Linear Regression]
-│ (m,c) │ ↓
-└──────────────┘ [Next Hour AQI]
-↓ ↑
-┌──────────────┐ │
-│ GRAPH │◄──┘
-│ (Trendline) │
-└──────────────┘
-↓
-[Back to Menu]
-↓
-[EXIT?]
+START     
+↓ [Initialize System]      
+↓ ┌─────────────────────┐      
+│ MAIN MENU │     
+│ 1.Add 2.History │──────┐     
+│ 3.Predict 4.Graph │ │    
+│ 5.Exit │ │     
+└─────────────────────┘ │   
+↓ │   
+┌─────────────────┐ │    
+│ Add Reading │◄─────────┘    
+│ (AQI Input) │    
+└─────────────────┘    
+↓ ┌─────────────────┐    
+│ Store Record │    
+│(Hour+AQI+Cat) │    
+└─────────────────┘   
+↑ └──────────────────────┐    
+↓      
+┌──────────────┐        
+│ HISTORY │    
+│ DISPLAY │     
+└──────────────┘    
+↓     
+┌──────────────┐    
+│ PREDICT │───► [Linear Regression]     
+│ (m,c) │ ↓      
+└──────────────┘ [Next Hour AQI]     
+↓ ↑    
+┌──────────────┐ │    
+│ GRAPH │◄──┘    
+│ (Trendline) │   
+└──────────────┘    
+↓    
+[Back to Menu]    
+↓    
+[EXIT?]      
 
 ---
 
