@@ -36,33 +36,33 @@ ALGORITHM V-AIR_AQI_Predictor
 records = empty list
 MAX_RECORDS = 100
 
-2. WHILE user wants to continue:
-DISPLAY menu (1-5 options)
-GET user choice IF choice == 1: // Add Reading
-IF records >= MAX_RECORDS:
-DISPLAY "Database full"
-ELSE:
-GET aqi_value from user
-hour = length(records) + 1
-category = classify_AQI(aqi_value)
-ADD AirQualityRecord(hour, aqi_value, category) to records IF choice == 2: // Show History
-IF records empty:
-DISPLAY "No data"
-ELSE:
-DISPLAY table: hour, AQI, category for all records IF choice == 3: // Predict
-IF records < 2:
-DISPLAY "Need minimum 2 points"
-ELSE:
-x = array of hours
-y = array of AQI values
-m = slope = (n∑xy - ∑x∑y) / (n∑x² - (∑x)²)
-c = intercept = (∑y - m∑x) / n
-next_aqi = m*(max_hour+1) + c
-DISPLAY prediction results IF choice == 4: // Plot
-PLOT scatter(x,y) + trend_line(mx + c) IF choice == 5:
-EXIT
+2. WHILE user wants to continue:    
+DISPLAY menu (1-5 options)    
+GET user choice IF choice == 1: // Add Reading    
+IF records >= MAX_RECORDS:    
+DISPLAY "Database full"    
+ELSE:    
+GET aqi_value from user   
+hour = length(records) + 1    
+category = classify_AQI(aqi_value)    
+ADD AirQualityRecord(hour, aqi_value, category) to records IF choice == 2: // Show History    
+IF records empty:   
+DISPLAY "No data"   
+ELSE:    
+DISPLAY table: hour, AQI, category for all records IF choice == 3: // Predict     
+IF records < 2:      
+DISPLAY "Need minimum 2 points"    
+ELSE:      
+x = array of hours   
+y = array of AQI values    
+m = slope = (n∑xy - ∑x∑y) / (n∑x² - (∑x)²)    
+c = intercept = (∑y - m∑x) / n    
+next_aqi = m*(max_hour+1) + c    
+DISPLAY prediction results IF choice == 4: // Plot    
+PLOT scatter(x,y) + trend_line(mx + c) IF choice == 5:   
+EXIT   
 
-END WHILE
+END WHILE   
 
 ---
 
