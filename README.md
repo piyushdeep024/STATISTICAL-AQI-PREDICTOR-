@@ -170,11 +170,11 @@ HOUR AQI CATEGORY
 2 67.50 MODERATE    
 3 89.20 MODERATE    
 
---- Prediction Result ---
-Slope (m): 22.35
-Intercept (c): 12.45
-Next Hour AQI: 111.80
-Category: UNHEALTHY
+--- Prediction Result ---   
+Slope (m): 22.35    
+Intercept (c): 12.45    
+Next Hour AQI: 111.80   
+Category: UNHEALTHY    
 
 ---
 
