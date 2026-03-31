@@ -164,11 +164,11 @@ Prediction = m × (next_hour) + c
 ---
 
 ##  Sample Output
-HOUR AQI CATEGORY
+HOUR AQI CATEGORY     
 
-1 45.00 GOOD
-2 67.50 MODERATE
-3 89.20 MODERATE
+1 45.00 GOOD    
+2 67.50 MODERATE    
+3 89.20 MODERATE    
 
 --- Prediction Result ---
 Slope (m): 22.35
