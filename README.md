@@ -59,10 +59,9 @@ m = slope = (n∑xy - ∑x∑y) / (n∑x² - (∑x)²)
 c = intercept = (∑y - m∑x) / n    
 next_aqi = m*(max_hour+1) + c    
 DISPLAY prediction results IF choice == 4: // Plot    
-PLOT scatter(x,y) + trend_line(mx + c) IF choice == 5:   
-EXIT   
+PLOT scatter(x,y) + trend_line(mx + c) IF choice == 5:     
 
-END WHILE   
+END   
 
 ---
 
@@ -111,7 +110,7 @@ START
 
 ```bash
 # Clone/Download the project
-git clone <your-repo-url>
+git clone https://github.com/piyushdeep024/STATISTICAL-AQI-PREDICTOR-.git
 cd v-air-aqi-predictor
 
 # Run the application
