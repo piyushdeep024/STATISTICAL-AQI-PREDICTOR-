@@ -24,7 +24,9 @@ V-AIR is an interactive **Air Quality Index (AQI) prediction system** that uses 
 ##  Tech Stack
 Python 3.x
 ├── NumPy (Statistical computations)
+
 ├── Matplotlib (Data visualization)
+
 └── Dataclasses (Data modeling)
 
 ---
